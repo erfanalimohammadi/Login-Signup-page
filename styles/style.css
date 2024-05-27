@@ -1,0 +1,259 @@
+@import url("https://fonts.google.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "poppins",sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./2693171.jpg");
+  backdrop-filter: blur(1px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  backdrop-filter: blur(20px);
+  padding: 15px;
+  z-index: 1;
+  box-shadow: 0 0 10px rgb(126, 115, 115);
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.nav a {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 45px 0 45px;
+  font-size: 20px;
+}
+
+
+.nav a:hover {
+  background-color: transparent;
+  color: #333;
+  transition: all 0.05s ease-in-out 0.005s;
+}
+
+.wrapper{
+  width: 420px;
+  background:transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+
+
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .input-box{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  margin: 15px 0;
+}
+.header {
+  margin-bottom: 50px;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input:focus {
+  outline: 2px solid #fff;
+  transition: all 50ms ease-in 10ms;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.input-box i {
+  position:absolute;
+  right: 52px;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  font-size:20px;
+  color: black;
+}
+
+ .wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 15px 0 15px;
+ }
+ .remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+
+ }
+ .remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+ }
+ .remember-forgot a:hover {
+  text-decoration: underline;
+ }
+ .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+ }
+ .wrapper .btn:hover{
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.2s ease-out 50ms;
+}
+ .wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px 0 15px;
+ }
+ .register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+ }
+ .register-link p a:hover {
+  text-decoration: underline;
+ }
+.eye1{
+  position: absolute;
+  top: 59.5%;
+}
+.eye2{
+  top: 71%;
+}
+.icon-email {
+  position: absolute;
+  top: 48%;
+}
+.icon-user {
+  position: absolute;
+  top: 37%;
+}
+.icon-name {
+  position: absolute;
+  top: 25.5%;
+}
+.user-icon {
+  top: 35.5%;
+}
+.lock-icon{
+  top: 51.5%;
+}
+
+@media only screen and (max-width: 620px) {
+  .nav a {
+    font-size: 15px;
+    margin: 0 15px 0 15px;
+
+  }
+  .wrapper {
+    max-width: 420px;
+    padding: 20px 40px;
+  
+  }
+  .wrapper h1 {
+    font-size: 25px;
+}
+.eye1{
+  top: 59%;
+}
+.eye2{
+  top: 71%;
+}
+.icon-email {
+  top: 47%;
+}
+.icon-user {
+  top: 35%;
+}
+.icon-name {
+  top: 23%;
+}
+.user-icon {
+  top: 33%;
+}
+.lock-icon{
+  top: 50%;
+}
+}
+@media only screen and (max-width:320px){
+  .wrapper .remember-forgot {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 10px;
+    margin: 15px 0 15px;
+   }
+   .nav a {
+    font-size: 11px;
+    margin: 0 10px 0 10px;
+
+  }
+  .forgot, .remember-me {
+    margin-top: 10px;
+  }
+  .forgot {
+    margin-left: 17px;
+  }
+  .wrapper .register-link {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin: 10px 0 10px;
+   }
+   .eye1{
+    top: 61%;
+  }
+  .eye2{
+    top: 74%;
+  }
+  .icon-email {
+    top: 49%;
+  }
+  .icon-user {
+    top: 36%;
+  }
+  .icon-name {
+    top: 24%;
+  }
+  .user-icon {
+    top: 32%;
+  }
+  .lock-icon{
+    top: 49%;
+  }
+  }
